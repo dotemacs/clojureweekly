@@ -1,0 +1,115 @@
+#+OPTIONS: toc:nil num:nil
+
+* Clojure weekly #1
+
+Welcome to the first issue of Clojure Weekly, where I'll provide
+curated links from various sources about all things Clojure and
+ClojureScript.
+
+It's always nice to hear positive things about technology that you
+like: Paul Graham (of [[https://www.ycombinator.com/][Y Combinator]] and author of [[https://www.cliki.net/On%2520Lisp]["On Lisp" book]])
+thinks that for competitive advantage you should [[https://twitter.com/paulg/status/1240218967865778177][pick Clojure]].
+
+** Software releases
+
+[[https://github.com/borkdude/clj-kondo/releases/tag/v2020.03.20][clj-kondo]] has its [[https://twitter.com/borkdude/status/1240950337617432577][1st birthday release]].
+
+CursiveIDE 1.9.1 is [[https://twitter.com/CursiveIDE/status/1240871793222545410][out]], it's mostly a bug fix release but brings in
+support for IntelliJ 2020.1.
+
+*hikari-cp* is out: [[https://twitter.com/_tomekw/status/1240648960076845056][2.11.0]] and in total, the library has over 1 million
+downloads.
+
+The new version of *Leiningen* is out: [[https://www.freelists.org/post/leiningen/ANN-Leiningen-293-released][2.9.3]].
+
+Analyse occurrences of reify in Clojure code. Implemented using
+[[https://github.com/borkdude/analyze-reify][tree-sitter-clojure and Rust]].
+
+[[https://www.graphqlize.org/blog/announcing-graphqlize-alpha/][GraphQLize]], alpha version, new library, that allows you to "developing
+GraphQL API instantly from your existing PostgreSQL and MySQL
+databases".
+
+[[https://github.com/phronmophobic/membrane][Membrane]] - a platform agnostic library for creating user interfaces.
+
+** Write ups
+
+Aravind’s write up about [[https://hackernoon.com/my-opinionated-takeaways-from-inclojure-2020-0z4h37ek][IN/Clojure 2020 conference]].
+
+Why Not Software blog has a few short by [[https://whynotsoftware.github.io/wnaf-assoc-ins/][interesting]] [[https://whynotsoftware.github.io/wnaf-update-if/][blog]] [[https://whynotsoftware.github.io/wnaf-assoc-non-empty-in/][posts]].
+
+** Interesting
+
+Martin Klepsch created a [[https://twitter.com/martinklepsch/status/1239532269578194944][a GitHub action that creates structural diffs
+for you Clojure PRs]].
+
+"Which function arguments should I support?"
+Christopher would like to know if he should support both =(f :some
+:opts)= & =(f {:some :opts})=?  Which is related to his update on [[http://metasoarous.com/blog/oz-clojurists-together-update-5][his
+work on Oz for Clojurists Together]].
+
+[[https://www.reddit.com/r/Clojure/comments/fj4r9o/any_startups_that_use_clojurescript_i_know_of_two/][What startups are using Clojure?]] - a reddit discussion.
+
+Babashka scripting [[https://twitter.com/stathissideris/status/1240400739605905409][usage feedback]].
+
+** Learning
+
+Jacob O'Bryant is building a sample service and documenting as he's
+going along. [[https://jacobobryant.com/post/2020/add-cljs/][In this installment]] he shows how to adds ClojureScript
+with shadow.cljs.
+
+An [[https://clojureverse.org/t/any-example-project-setups-for-shadow-cljs-clj-backend-using-tools-deps/5615][example project]] setup for shadow-cljs + clj backend using
+tools.deps.
+
+
+** Remote work
+
+Considering the situation the world is in, there's a lot of info going
+around about remote work.
+
+Some great advice can be picked up [[https://twitter.com/gniemeyer/status/1239529362774528000][from here]]. ThoughtWorks have [[https://files.thoughtworks.com/pdfs/Books/Remote_Work_Playbook.pdf][a
+remote work playbook]] [PDF]. Dan has some [[https://danlebrero.com/2020/03/16/backgrounds-for-software-developers-zoom-virtual-backgrounds/][cool suggestions]] for video
+conferencing backgrounds.
+
+Even the seasoned remote workers [[https://twitter.com/samkottler/status/1240672711069904896][can't feel super productive]] in the
+current climate.
+
+It's not the same choosing to work from home and being forced into
+it, so be careful when [[https://twitter.com/EricaJoy/status/1239642562488446976][forming your opinion about it]].
+
+Also, please [[https://twitter.com/dhh/status/1240766967641804802][don't do this]].
+
+
+** COVID19 pandemic hacks
+
+Seems like David Liepmann started it with [[http://www.appliedscience.studio/articles/covid19.html][his blog post]] last
+week. Then this week, Dragan shared [[https://dragan.rocks/articles/20/Corona-1-Baby-steps-with-Covid-19-for-programmers][his blog post]] on how to attempt
+analysis of this data yourself. Clojure Weekly study group will use
+this blog post for [[http://meetu.ps/e/HDD8k/1LTR5/a][tomorrow's virtual meetup]]. But also the [[https://scicloj.github.io/posts/2020-03-18-covid-19-hackathons-announcement/][hackathon]]
+will work on this timely topic.
+
+They might find [[https://twitter.com/borkdude/status/1240960771259015169][this data set useful]].
+
+With a reminder from Dave about [[https://groups.google.com/d/msg/clojure/EvRVhMiPtPg/DInzUxeMAgAJ][our responsibility]].
+
+** Podcasts
+
+New ClojureScript Podcast [[https://clojurescriptpodcast.com/][episode]], with Alex Miller.
+
+Functional design in Clojure podcasts have two episodes, that didn't
+come out this week, but they did tweet about them this week: [[Https://clojuredesign.club/episode/069-stuck-in-the-web/][Episode
+69]] is about *web handlers* and [[https://clojuredesign.club/episode/070-socket-circus/][episode 70]] is about *Websockets*.
+
+** Open source involvement
+
+If you’d like to get more involved with open source, Arne has some
+ideas [[https://twitter.com/plexus/status/1240249118964027395][what you could pick up]]. Or you could [[https://twitter.com/v1aaad/status/1239273057883209729][sponsor vlaaad]].
+
+
+** Looking for work
+
+Kenneth is [[https://twitter.com/kennethkalmer/status/1239530518875705344][looking for work]]. If you've got a Clojure position, speak to him.
+
+** Like what you see?
+
+Do let me know what you think of this newsletter and what you'd like
+to see more of.
