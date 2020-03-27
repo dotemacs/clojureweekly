@@ -1,0 +1,111 @@
+#+OPTIONS: toc:nil num:nil
+
+* Clojure weekly #2
+
+Welcome to the second edition of Clojure Weekly.
+
+This week there are talk recordings from two conferences:
+
+IN/Clojure 2020 [[https://www.youtube.com/playlist?list=PLlAML-kjpXY7ZGj6anXfKSqN1XGTCEmmw][videos]] and :cljureD 2020 [[https://www.youtube.com/playlist?list=PLaSn8eiZ631lrDFmUTBH9LFGzAxc3tvU4][videos]].
+
+** Write ups
+
+An argument about what makes Clojure well suited for [[https://elangocheran.com/2020/03/18/why-clojure-lisp-is-good-for-writing-transpilers/][writing
+transpilers]].
+
+[[https://alanmarazzi.gitlab.io/blog/posts/2020-3-23-math-for-clojurists/][Math for clojurists]] by Alan Marazzi.
+
+Why Not Software just keeps on producing [[https://whynotsoftware.github.io/wnaf-remove-vals/][short]] & [[https://whynotsoftware.github.io/wnaf-some-map/][useful]] [[https://whynotsoftware.github.io/wnaf-deep-merge/][bites]].
+
+Bozhidar Batsov's summary of his latest [[https://metaredux.com/posts/2020/03/25/meta-reduce-2020-0-lockdown.html][work and adventures]].
+
+Oliver Hine explains his library [[https://juxt.pro/blog/posts/superlifter.html][superlifter]].
+
+For Sublime users, [[https://adriansmith.io/Clojure-Sublime-Text-Setup.html][here is a guide on how to use it with Clojure]].
+
+** Learning
+
+Clojure & ClojureScript [[https://twitter.com/athomasoriginal/status/1240691973696049152][courses coming up]] from Thomas Mattacchione who
+blogs over at [[https://betweentwoparens.com/]["Between two parens"]].
+
+Daniel Szmulewicz adds episodes [[https://www.youtube.com/watch?v=EZwoIklIibU][VI]] and [[https://www.youtube.com/watch?v=iqfqkhWYdGM&list=PLfXkpzT8ddMck288_hN5Zoz2pyw_fG8KN&index=7][VII]] to his [[https://www.youtube.com/watch?v=1KRWfVhbBM8&list=PLfXkpzT8ddMck288_hN5Zoz2pyw_fG8KN][series]] about
+exploratory programming with the movie database. He promises to
+release the finale when the channel reaches [[https://twitter.com/danielszmu/status/1242901146966073344][500 subscribers]].
+
+Not strictly Clojure related, but Prolog has influenced Datalog which
+is used in Datomic, DataScript and Crux. Here you have a [[https://twitter.com/AnnieTheObscure/status/1240551572498767872]["Learn
+Prolog"]] course.
+
+"Elements of Clojure" by Zachary Tellman is [[https://twitter.com/elementsofclj/status/1242542066548137984][only $10]]
+
+** Jobs
+
+Twitter [[https://twitter.com/porkostomus/status/1241885772032036864][thread by @porkostomus]] on Clojure jobs, who's hiring and who
+wants to be hired.
+
+** Remote work
+
+[[http://blog.cognitect.com/cognicast/104][Podcast from Cognitect]] from 2016 but relevant in today's climate.
+
+Stuart Sierra shares a link to [[https://twitter.com/stuartsierra/status/1241027800179642370][video chat behaviour]].
+
+** ClojureScript - removal of the REPLs
+
+Discussion between David Nolen and Mike Fikes about the [[https://clojurians-log.clojureverse.org/cljs-dev/2020-03-20][removal of
+Rhino, Nashorn & Graal REPL support]].
+
+** Grants & funding
+
+Not strictly Clojure specific, but a list of programs that offer
+[[https://github.com/sakofchit/fund-my-project][grants and funding]] to projects.
+
+** Podcasts
+
+[[https://softwareengineeringdaily.com/2020/03/24/datomic-architecture-with-marshall-thompson/][Datomic Architecture]] with Marshall Thompson.
+
+** Interesting
+
+JDK 14, in the shape of [[https://bell-sw.com/announcements/2020/03/18/Liberica-JDK-14/][Liberica JDK]] is out.
+
+** New releases
+
+[[https://twitter.com/jepsen_io/status/1242934720654123014][elle - Transactional consistency checker]] for black-box databases, from aphyr.
+
+[[https://github.com/ont-app/igraph][IGraph]] - IGraph defines a protocol which aims to provide a general
+interface to a variety of graph-based representations (RDF,
+datascript, datomic, loom, ...). Here's a 15-minute video
+introduction: https://www.youtube.com/watch?v=BlH__4iNHZE&feature=youtu.be
+
+[[https://github.com/tatut/re-svg-icons][re-svg-icons]] - Free SVG icons as simple hiccup generating ClojureScript functions.
+
+[[https://github.com/uncomplicate/clojurecuda][clojurecuda 0.9.1]] - Clojure library for CUDA development.
+
+juxt/clip 0.16.0 - An alternative to integrant, mount or component from
+JUXT. [[https://github.com/juxt/clip/commit/6d03abec99f857622525d6e03345c0897936a9f1][Bug fix release]] for functions returning symbols.
+
+[[https://github.com/MichaelDrogalis/voluble][voluble 0.2.0]] - Intelligent data generator for Apache Kafka.
+
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.77][babashka 0.0.77]] - adds support for transit
+
+And if you'd like to deploy babashka flavoured lambda, see [[https://github.com/dainiusjocas/babashka-lambda/blob/master/README.md][this repo]].
+
+[[https://github.com/hkupty/debris][debris]] - A new project for a binary serialization format. It does not
+intend to compete on producing the smallest binary or having the
+fastest algorithm, but rather reliably produce deterministic binaries,
+independently from implementation, language or runtime.
+
+[[https://github.com/graphqlize/honeyeql][HoneyEQL]] - enables you to query database using the EDN Query Language.
+
+[[https://github.com/oliyh/re-learn][re-learn]] - 0.1.3 version of a library for writing and displaying
+tutorials to your users on your reagent/re-frame application.
+Demo: https://github.com/Lokeh/helix
+
+helix - A library which provides a set of tools for doing idiomatic
+React development in ClojureScript. Version [[https://github.com/Lokeh/helix][0.0.10 is out]].
+
+[[https://github.com/juxt/reap][reap]] - Regular Expressions And Parsing (in Clojure), from JUXT.
+
+** What do you think?
+
+If there's something like to add or see in the future issues, just
+reply to this email. Thank you.
