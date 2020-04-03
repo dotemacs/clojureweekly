@@ -1,0 +1,210 @@
+#+OPTIONS: toc:nil num:nil
+
+* Clojure Weekly #3
+
+Welcome to the third Clojure Weekly.
+
+** Request For Comments
+
+[[https://twitter.com/AppSciStudio/status/1243434344242466817][Accessing R's RData files from Clojure]], Applied Science Studio is
+looking for your feedback before they release the library.
+
+[[https://github.com/porkostomus/reel][reel]] - Read Eval Edit Loop: A REPL that is a text editor.
+
+** Interesting
+
+Clojurists Together Q2 2020 [[https://www.clojuriststogether.org/news/q2-2020-survey-results/][survey results]].
+
+[[https://www.patreon.com/posts/typed-clj-spec-34659583][typed.clj/spec]], a metalanguage for Clojure spec.
+
+Clojure's answer to Ansible, [[https://github.com/epiccastle/spire][spire]] is [[https://twitter.com/epic_castle/status/1243797567458013184][coming along nicely]]. With
+version [[https://github.com/epiccastle/spire/releases/tag/v0.1.0-alpha.3][0.1.0-alpha.3]] published today.
+
+ACM [[https://www.acm.org/articles/bulletins/2020/march/dl-access-during-covid-19][opens its digital library]] for free for the next three months due
+to Corona virus pandemic.
+
+Keechma's (micro framework for Reagent) documentation for internal
+onboarding at Very Big Things that helps explain how different parts
+make the framework and how the project should be structured, read it
+[[https://github.com/VeryBigThings/keechma-onboarding-documentation/blob/master/README.md][here]].
+
+Lambda Island has their own [[https://nextjournal.com/lambdaisland/clojure-style-guide][Clojure Style Guide]].
+
+[[https://gist.github.com/malcolmsparks/6a9aab2465d2d7ea841cb9187a6d17fd][reap demo]] - Regular Expression and Parsing in Clojure library.
+
+I've not seen [[https://re-ops.github.io/re-ops/][re-ops]] before, but it looks like they have many
+tools/libraries for ops in their GitHub organisation, many written in
+Clojure. Two new re-ops projects, that can be used without compilation
+or restarts: [[https://github.com/re-ops/re-cog][re-cog]] - a set of remote functions that can be reloaded
+in the REPL and [[https://github.com/re-ops/re-cipes][re-cipes]] - a collection of recipes for provisioning
+machines without leaving the REPL.
+
+A draft paper for EU Lisp Symposium, by Alan Dipert on his
+[[https://tailrecursion.com/~alan/documents/jacl-els-2020-draft.pdf][JavaScript-Assisted Common Lisp]] (PDF).
+
+After 7 months and 5 days The REPL newsletter is [[https://www.therepl.net/94/][back]].
+
+core.async 1.1.587 is out with [[https://clojurescript.org/guides/promise-interop][updated guide for promise-interop]].
+
+[[https://clojurians-log.clojureverse.org/announcements/2020-03-31/1585683257.056400][New #exercism channel]] has been started on Clojurians Slack.
+
+** Boisterous merriment
+
+Erik Naggum [[https://twitter.com/xach/status/1245063036404224001][invented Clojure syntax]] in 1997.
+
+[[https://clojurians-log.clojureverse.org/announcements/2020-04-01/1585753566.078200][spec 3]] is out.
+
+** Write ups
+
+[[https://blog.ambrosebs.com/2020/03/30/what-type-clojure.html][What are types in Clojure?]] by Ambrose Bonnaire-Sergeant.
+
+[[https://vlaaad.github.io/year-of-clojure-on-the-desktop][Year of Clojure on the desktop]] - about desktop apps in Clojure, with a
+[[https://news.ycombinator.com/item?id=22710604][discussion]] on Hacker News.
+
+nREPL 0.7.0 update - https://metaredux.com/posts/2020/03/28/nrepl-0-7.html
+
+Arne of Lambda Island makes a part 2 post about a pattern he's calling
+[[https://lambdaisland.com/blog/2020-03-29-coffee-grinders-2][Coffee Grinders]]. With further [[https://clojurians-log.clojureverse.org/lambdaisland/2020-03-29][discussion on Clojurians Slack log]].
+
+Ever needed a way to combine two UUIDs and generate a repeatable
+version 3 UUID? Fear not, Why Not Software has [[https://whynotsoftware.github.io/wnaf-uuids-to-named-uuid/][a blog post]] on just
+that.
+
+If you Vim, this is how to [[https://jacobobryant.com/post/2020/editing-sexprs/][navigate Clojure or any other Lisp]] without
+any extra plugins.
+
+[[https://betweentwoparens.com/what-are-the-clojure-tools][What are the Clojure Tools?]] - "in this post I want to share some of my
+knowledge of what the clj/clojure tool is, the problem it solves and
+how it compares to lein and boot."
+
+[[https://kaygun.tumblr.com/post/614218948209197056/using-javaplex-with-clojure][Using JavaPlex with Clojure]] - JavaPlex "implements persistent
+homology and related techniques from computational and applied
+topology", developed at Stanford University.
+
+** Tools
+
+If you use Vega visualisation grammar, then you might like
+[[https://github.com/appliedsciencestudio/emacs-vega-view][emacs-vega-view]], a library for "facilitating exploratory data
+visualization". In [[https://www.reddit.com/r/emacs/comments/fsuyh2/vega_viewer_in_emacs/][/r/emacs discussion]] there's a link to Stathis
+Sideris' [[https://github.com/stathissideris/optikon][optikon]], graalvm native-image wrapper of vega and vega-lite.
+
+[[https://github.com/rymndhng/release-on-push-action][Github Action]] to create a git tag & release when pushed to master, via
+babashka.
+
+Babashka [[https://gist.github.com/swlkr/3f346c66410e5c60c59530c4413a248e#gistcomment-3232605][script]] to convert project.clj to deps.edn.
+
+[[https://theronic.github.io/depsy/][Depsy]] by Petrus Theron - a web form for converting project.clj or
+build.boot :dependencies into deps.edn dependencies.
+
+** Conferences
+
+Clojure/north is considering hosting the conference [[https://www.reddit.com/r/Clojure/comments/fosz3b/clojurenorth_organizers_considering_switching_to/][online]]. Which
+brings an interesting point, what would be the format of this online
+conference?
+
+ClojuTRE [[https://docs.google.com/forms/d/e/1FAIpQLSc4h0vhyXVXrb1yMuDknHPEOdkLnd16Lr_m_oeG6ikMXCiXZA/viewform][call for speakers]].
+
+Simon Belak's [[https://www.slideshare.net/simonbelak/exploratory-analysis][slide deck]] from Scicloj meetup.
+
+Clojure Days 2020 [[https://twitter.com/ClojureDays/status/1244898851858808832][has been cancelled]].
+
+2020 Scheme and Functional Programming Workshop - [[https://groups.google.com/forum/#!topic/clojure/sFhvDCQd1kM][Call for Papers]].
+
+ClojureX 2019 [[https://clojure.org/events/2019/clojurex][was cancelled]] because the company behind the event
+(Skills Matter Ltd.) went into administration. If you purchased the
+ticket for the event, or any other of their conferences, and wish to
+get a refund, write to ReSolve, which handled the administration, on
+[[mailto:info@resolvegroupuk.com][info@resolvegroupuk.com]]. This info comes from Quad4Group which has now
+bought Skills Matter Ltd.
+
+** Learning
+
+[[https://www.reddit.com/r/Clojure/comments/fpp9r8/how_hard_is_it_to_learn_clojure/][How hard is it to learn Clojure]] - a discussion on /r/clojure.
+
+Roman wants to share [[https://twitter.com/roman01la/status/1243942936628297729][his knowledge]].
+
+** Videos
+
+Recording of the [[https://youtu.be/-441SPx8lTo][first Clojure Covid-19 hackathon]].
+
+[[https://diode.zone/videos/watch/412c188c-e427-4e8c-9cbc-0a787c904b3e][Program]] that enables you to use gamepads as mouse and keyboard.
+
+JUXT will run "Crux Showcase" today at 15:00 UTC [[https://meet.google.com/ego-gwky-uae][here]]. They'll share
+the recording for those that don't make it.
+
+** Podcasts
+
+Over at The REPL, [[https://www.therepl.net/episodes/34/][Daniel interviews Bozhidar Batsov]].
+
+Jared Binford, Cognitect Customer Support Engineer, [[https://blog.cognitect.com/cognicast/150][gets interviewed]]
+by Carin Meier for Cognicast.
+
+** New releases
+
+Lambda Island hits: [[https://github.com/lambdaisland/deep-diff2][deep-diff2]] - deep-diff compares Clojure data
+structures, creating a pretty printed diff with -/+ markers and
+green/red highlighting. This major update is the first version with
+full cross-platform Clojure+ClojureScript support. [[https://github.com/lambdaisland/kaocha/releases/tag/v1.0-612][kaocha]] (next gen
+Clojure test runner) and [[https://github.com/lambdaisland/kaocha-cloverage/releases/tag/v1.0-45][kaocha-cloverage]] (code coverage analysis for
+Kaocha) both had their versions bumped to 1.0 following the action
+trend in Clojure world.
+
+[[https://github.com/jepsen-io/jepsen/releases/tag/0.1.18][jepsen]] - A framework for distributed system verification sees a new
+release 0.1.18.
+
+[[https://github.com/ertugrulcetin/patika][patika]] - Clojure routing library which is an abstraction over
+Liberator + Compojure.
+
+[[https://github.com/portkey-cloud/cfn-yaml][portkey-cloud/cfn-yaml]] 0.1.1 - a small lib for reading CloudFormation
+YAML templates with intrinsic functions
+
+[[https://github.com/emil0r/ez-database][ez-database]] 0.7.0 - handles database queries with different libraries.
+
+[[https://github.com/liquidz/vim-iced][vim-iced]] 1.3.0 - CIDER for vimmers, adds support for nREPL 0.7
+sideloading.
+
+[[https://github.com/uncomplicate/neanderthal/blob/master/CHANGELOG.md#0290][neandrethal]] 0.29.0 - fast Clojure Matrix Library.
+
+[[https://github.com/lukaszkorecki/taskmaster][taskmaster]] - job queue on top of Postgres.
+
+[[https://atom.io/packages/chlorine][chlorine]] v0.5.0 - Chlorine is a package for Atom that connects to a
+Socket REPL. This version also adds support for nREPL. The
+reason is simple: it was not hard to add support for nREPL, and by
+doing it it removes a lot of friction of new users that come from
+lein, for example. It also adds a little support for HyREPL and Ogion
+(Racket implementation of nREPL).
+
+[[https://github.com/dmillett/clash][clash]] 1.5.1 - project for quick interactive analysis of structured
+text files (ex: logs, csv, etc.), within the REPL.
+
+[[https://github.com/nubank/k8s-api][k8s-api]] - a data-oriented client to Kubernetes API inspired by
+cognitect-labs/aws-api.
+
+[[https://github.com/fulcrologic/fulcro][fulcro]] 3.2.0 - a library for development of single-page full-stack web
+applications in clj/cljs. This release has a major improvement (in
+speed and behavior) to DOM inputs. If you're insterested in fulcro,
+see the new (ALPHA) version of the Fulcro RAD libraries (RAD, Datomic
+db adapter and SQL db adapter) along with an [[https://github.com/fulcrologic/fulcro-rad-demo][updated demo]].
+
+** Clojure work
+
+Hacker News April [[https://hnhiring.com/search?technologies=clojure][Clojure jobs postings]].
+
+Due to the situation the world is in, there are Clojurians out of the
+job. Help them out:
+
+- [[https://twitter.com/iLemming/status/1244662671250567169][@iLemming]]
+- [[https://twitter.com/vasac3000/status/1244995843377246208][@vasac3000]]
+- [[https://twitter.com/alekszelark/status/1242048911277260800][@alekszelark]]
+- [[https://twitter.com/sofra/status/1245199347295252480][@sofra]]
+
+** Outro
+
+If you've got something that you'd like to share via this newsletter,
+let me know.
+
+And if you'd like to support it, create a pull request for that
+Clojure(Script) library that you were thinking about, create a new
+library or sponsor somebody whose work you like.
+
+Thanks
