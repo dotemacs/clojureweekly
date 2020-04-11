@@ -1,0 +1,156 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #4
+
+Welcome to the fourth Clojure Weekly.
+
+** Interesting
+
+Clojure & Neanderthal is faster than Python & NumPy/CuPy, [[https://dragan.rocks/articles/20/Clojure-Numpy-Cupy-CPU-GPU][link]].
+
+David Nolen with a [[https://twitter.com/swannodette/status/1248392866453278721][tease announcement]] on better NPM library
+integration with ClojureScript.
+
+Clojure test library in 30-odd lines of code, [[https://gist.github.com/dustingetz/f98f1e6ccbfd9b8c912f2fcb03b270dc][link]].
+
+On [[https://lobste.rs/s/jt8ec2/share_your_interesting_project_you_wrote][lobste.rs]]: Share your interesting project your wrote using Clojure.
+
+Ambrose Bonnaire-Sergeant's [[https://twitter.com/ambrosebs/status/1246186105583648773][application]] to Clojurists Together.
+
+Write CGIs with clojure: https://github.com/alekcz/pcp.
+
+Rum got a [[https://github.com/tonsky/rum/issues/197][new maintainer]].
+
+babashka in [[https://github.com/borkdude/babashka/issues/241#issuecomment-610691695][Android]].
+
+Spring Lisp Game Jam is on, [[https://itch.io/jam/spring-lisp-game-jam-2020][link]].
+
+4clojure with babashka, no JVM needed, [[https://github.com/porkostomus/4bb][link]].
+
+proxy in MAGIC & Clojure CLR, [[https://twitter.com/ra/status/1247341799892496386][link]].
+
+
+** Write ups
+
+Developing, Testing and Deploying AWS Lambda Functions written in ClojureScript: [[https://dev.to/beders/developing-testing-and-deploying-aws-lambda-functions-written-in-clojurescript-284l][link]].
+
+[[https://spin.atomicobject.com/2020/04/08/react-contexts-dynamic-scope/][React Contexts are Dynamic Scope]] - React's Contexts explained with Clojure code.
+
+Jack Rusher on [[https://nextjournal.com/jackrusher/grinding-some-coffee/][Coffee Grinders]].
+
+A recommender system in [[https://findka.com/blog/rec-sys-in-30-lines/][30 lines of Clojure]].
+
+Clojurists Together [[https://www.clojuriststogether.org/news/march-2020-monthly-update/][update]].
+
+Serverless Clojure web app on AWS Lambda, [[https://thegeez.net/2020/04/07/serverless_clojure_web_app_aws_lambda.html][link]].
+
+Hiccup to XML, implemented in a single function, [[https://whynotsoftware.github.io/wnaf-output-xml/][link]].
+
+Leveraging Clojure-power for SQL generation with HoneySQL [[https://tech.toryanderson.com/2020/04/08/leveraging-clojure-power-for-sql-generation-with-honeysql/][link]].
+
+Listicle on 26 best JVM books, 4.5 of those are on Clojure, [[https://bookauthority.org/books/best-jvm-books][link]].
+
+The REPL [[https://www.therepl.net/94/][#94]].
+
+Los Angeles Clojure Meetup talk presentation [[https://github.com/justone/bb-present]["Writing Clojure on the Command Line with Babashka"]].
+
+** Tools
+
+JUXT shared their config for reviewdog (automated code review
+tooling), that [[https://github.com/borkdude/clj-kondo/issues/844#issuecomment-609827001][they use]] with babashka (ZIP file).
+
+Fira Code v3 - https://twitter.com/FiraCode/status/1248300122867367936
+
+** Conferences
+
+HOPL IV - Rich Hickey was due to present. Postponed until the [[https://hopl4.sigplan.org/][first half of 2021]].
+
+ClojuTRE 2020 - COVID-19 [[https://clojutre.org/2020/][update]].
+** Podcasts
+
+ClojureScript Podcast S3 E5 - [[https://soundcloud.com/user-959992602][Babashka with Michiel Borkent]].
+
+[[https://clojuredesign.club/episode/072-sea-of-sockets/][Clojure Design 072]] - Sea of Sockets, the topic is: "Organizing our
+websocket code."
+
+[[https://www.therepl.net/episodes/35/][The REPL podcast]] with Łukasz Korecki.
+** Videos
+
+Eric Norman's talk [[https://youtu.be/qUfDty7WbEw]["Distilled Functional Programming"]] from Mid Cities
+meetup.
+
+Dutch Clojure April meet-up [[https://youtu.be/0YmZYnwyHHc][video recording]].
+
+[[https://www.youtube.com/watch?v=M8zBLMK1kaQ][Crux Showcase #11]] JUXT ran another Crux Showcase, the following was
+covered:
+• SQL / Calcite / TPC-H at [[https://www.youtube.com/watch?v=M8zBLMK1kaQ&t=1m33s][01:33]]
+• changes to the indexes  [[https://www.youtube.com/watch?v=M8zBLMK1kaQ&t=15m33s][15:33]]
+• metrics on the bench environment [[https://www.youtube.com/watch?v=M8zBLMK1kaQ&t=25m42s][25:42]]
+• our new soak environment [[https://www.youtube.com/watch?v=M8zBLMK1kaQ&t=29m45s][29:45]]
+• lazy queries, snapshots, resource management and open-q [[https://www.youtube.com/watch?v=M8zBLMK1kaQ&t=34m27s][34:27]]
+
+
+
+
+
+
+
+
+
+
+
+** New releases
+
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.79][babashka]] v0.0.79 - a native fast-starting Clojure scripting
+environment, adds an nREPL server for development
+
+[[https://www.graphqlize.org/blog/graphqlize-update-1/][GraphQLize]] - an open-source JVM library for developing GraphQL APIs,
+first update.
+
+[[https://github.com/dainiusjocas/clojure-kafka-graalvm-native-image][Compile Kafka consumer & producer with GraalVM]].
+
+[[https://www.npmjs.com/package/create-expo-cljs-app][create-expo-cljs-app]] - one command solution to generating expo cljs
+react native projects. Accompanied by a [[https://jgood.io/posts-output/2020-04-05-stealing-with-deps][blog post]] on how it was done.
+
+[[https://github.com/luminus-framework/ring-undertow-adapter][luminus/ring-undertow-adapter]] - Undertow is "flexible performant web
+server written in Java, providing both blocking and non-blocking API’s
+based on NIO". Ring Undertow adapter with WebSocket support. Not to be
+confused with the [[https://github.com/piranha/ring-undertow-adapter][older implementation]] which is no longer maintained.
+
+[[https://github.com/candid82/joker/releases/tag/v0.15.1][joker]] - a small Clojure interpreter and linter written in Go, sees a
+new 0.15.1 release.
+
+[[https://github.com/wilkerlucio/wsscode-async/blob/master/CHANGELOG.md#104][wscode-async]] - core.async helpers. This release adds deftest-async
+helper on the clojure side, so you can write portable async tests in
+cljc. Also adds a new namespace with some queue processing helpers!
+
+[[https://github.com/redstarssystems/context][context]] - early alpha release for simple system state management.
+
+[[https://github.com/MichaelDrogalis/voluble/blob/master/CHANGELOG.md#030][voluble]] v0.3.0 - intelligent data generator for Apache Kafka.
+
+[[https://open-vsx.org/extension/borkdude/clj-kondo][clj-kondo]] & [[https://open-vsx.org/extension/betterthantomorrow/calva][calva]] are available on [[https://www.eclipse.org/community/eclipse_newsletter/2020/march/1.php][Open VSX]], a free marketplace for VS
+Code extensions, that caters for Visual Studio Code compatible
+editors.
+
+[[https://github.com/ovotech/ring-jwt][ring-jwt]] - Ring middleware to parse, decide and verify JWT tokens.
+
+[[https://github.com/techascent/tech.ml.dataset][tech.ml.dataset]] 2.0-beta-8 - Dataset load/ETL pipeline for machine learning
+
+Calva got a [[https://clojureverse.org/t/calva-gets-a-debugger/5751][debugger]]
+
+[[https://github.com/graphqlize/honeyeql][honeyeql]] 0.1.0-alpha8 - query database using the EDN Query Language, adds MySQL's boolean data type support.
+
+[[https://github.com/ovotech/duct.middleware.ring-jwt][duct.middleware.ring-jwt]] - Duct/Integrant keys for wrapping the ring-jwt middleware.
+
+[[https://github.com/katox/neanderthal-stick][neanderthal-stick]] 0.2.0 - save/load Extensions for Neanderthal, fast Clojure matrix library.
+
+[[https://github.com/gnarroway/fumi][fumi]] - Prometheus client in Clojure.
+
+nREPL 0.7.0 will be in the next Leiningen: https://github.com/technomancy/leiningen/pull/2673
+
+[[https://github.com/appliedsciencestudio/darkstar][darkstar]] - a minimal wrapper over Vega/Vega-lite as a single JVM-only Clojure library
+
+Collection of babashka scripts, [[https://github.com/justone/bb-scripts][link]].
+** Outro
+
+If there's something you'd like to be featured, do let me know, just
+reply to this email.
