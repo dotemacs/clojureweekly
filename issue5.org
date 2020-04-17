@@ -1,0 +1,100 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #5
+
+Hello and welcome to the fifth Clojure Weekly.
+
+So far the newsletter has been run via Mailchimp, in HTML format.  If
+you'd like to see the newsletter in plain text or object to Mailchimp
+for some reason, please let me know.
+
+** Interesting
+
+David Nolen released [[https://github.com/vouch-opensource/krell][krell]] a new tooling configuration for React
+Native, that uses the new ClojureScript support for transitive deps
+from node_modules directory, [[https://gist.github.com/swannodette/919ef8fb51e7ee91b5f3ab643c4b3e55][link]]. It comes with a [[https://github.com/vouch-opensource/krell/wiki/Reagent-Tutorial][tutorial]].
+
+Clojure with [[https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZgaHI/edit#slide=id.ga3a076b34_0_12][metal birds in the sky]].
+
+[[https://twitter.com/ra/status/1248722305519431681][proxy]] is more or less finished in MAGIC!
+
+Clojure downloads show [[https://twitter.com/eccentric_jay/status/1249116959129645056/photo/1][increase of downloads from unique IPs]].
+
+[[https://leanpub.com/progalgs/read]["Programming Algorithms"]] by Vsevolod Domkin, on algorithms, with code
+examples in Lisp.
+
+** Write ups
+
+Why Not Software has new posts on [[https://whynotsoftware.github.io/wnaf-validate-xml/][validating XML]], [[https://whynotsoftware.github.io/wnaf-xml-to-map/][turning XML to a map]]
+and a [[https://whynotsoftware.github.io/wnaf-list-index-of/][useful utility]].
+
+More fun with NumPy, CuPy, Clojure and GPU acceleration. Hold my Cider 2! [[https://dragan.rocks/articles/20/Clojure-Numpy-Cupy-CPU-GPU-2][link]].
+
+[[https://mrhaki.blogspot.com/2020/04/clojure-goodness-getting-results-from.html][Clojure Goodness]] on juxt.
+
+[[https://mrhaki.blogspot.com/2020/04/clojure-goodness-combine-first-and-next.html][Clojure Goodnes]]: Combine First And Next Functions Multiple Times.
+
+
+** Tools
+
+Turn Emacs buffer region from [[https://twitter.com/jackrusher/status/1250778582873444352][JSON to EDN]] using jet.
+
+Replace [[https://twitter.com/borkdude/status/1249818512295632897][jq with bb]].
+
+[[https://practicalli.github.io/spacemacs/install-spacemacs/clj-kondo-via-lsp.html][Setup steps]] for clj-kondo (code linter), to work via LSP, for
+Spacemacs.
+
+*deps.clj*, a community re-implementation of the clojure bash script in
+clojure, supports http proxy settings picked up from the [[https://github.com/borkdude/deps.clj#proxy-environment-variables][environment
+variables]].
+
+[[https://titanoboa.io/blog-java-support-repl.html][Java REPL]] - written in Clojure.
+
+** Learning
+
+Learn Datomic, [[https://drewverlee.github.io/posts-output/2020-4-13-learn-datomic-part-1.html][part 1]].
+
+** Discussion
+
+[[https://www.reddit.com/r/Clojure/comments/g1zhk0/how_do_people_feel_about_using_in_production_code/][How do people feel about using #= in production code?]]
+
+[[https://www.reddit.com/r/Clojure/comments/g2qwly/clojure_stack_for_microservices_in_aws/][Clojure Stack for microservices in AWS]]
+
+[[https://www.reddit.com/r/Clojure/comments/g0szub/machine_learning_with_clojure/][Machine learning in Clojure]]
+
+** Podcasts
+
+[[https://soundcloud.com/user-959992602/s4-e1-web-development-with-malcolm-sparks][ClojureScript podcast S4E1]] - with Malcoml Sparks.
+
+[[https://soundcloud.com/defn-771544745/58-an-assum-easter-episode-with-erik][Defn podcast]] - with Erik Assum.
+
+** Conferences
+
+ClojuTRE 2020, [[https://docs.google.com/forms/d/e/1FAIpQLSc4h0vhyXVXrb1yMuDknHPEOdkLnd16Lr_m_oeG6ikMXCiXZA/viewform][call for speakers]].
+
+** New releases
+
+*babashka* has had three releases in the past week: [[https://github.com/borkdude/babashka/releases/tag/v0.0.83][v0.0.83]], [[https://github.com/borkdude/babashka/releases/tag/v0.0.84][v0.0.84]] &
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.85][v0.0.85]]. Some of the changes: fix for Vim Fireplace, nREPL
+documentation, added `clojure.repl/find-doc` and pulled in requred
+libraries which make it capable of implementing `statsd` client.
+
+[[https://github.com/tonsky/rum/blob/gh-pages/CHANGELOG.md#0115-snapshot][rum]] 0.11.5-snapshot - HTML UI library, recently got a new maintainer
+and the new release candidate comes with a bunch of fixes and new
+features.
+
+[[https://clojars.org/org.flatland/ordered][org.flatland/ordered]] - it is now no longer dependent on
+org.flatland/useful which makes the dependency tree much smaller.
+
+[[https://clojars.org/clj-commons/clj-yaml][clj-commons/clj-yaml]] - an upgrade of org.flatland/ordered (as
+mentioned above) which makes the dependency tree much smaller.
+
+[[https://github.com/redstarssystems/context/blob/master/CHANGELOG.adoc#010-alpha2---2020-04-14][context]] 0.1.0-alpha2 - component like library.
+
+[[https://github.com/clojure-emacs/inf-clojure/blob/master/CHANGELOG.md#220-2020-04-15][inf-clojure]] 2.2.0 - a lightweight Emacs mode for interactive Clojure
+REPL sessions.
+
+[[https://github.com/BetterThanTomorrow/calva][calva]] v2.0.92 - VS Code mode for Clojure, the new debugger gets more
+features: step over, step into, and step out, annotations to show debug
+values in the editor.
+
+[[https://github.com/grav/aws-lumo-cljs-runtime][aws-lumo-cljs-runtime]] - Run Lumo as AWS Lambda.
