@@ -1,0 +1,126 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #6
+
+Hello and welcome to the sixth Clojure Weekly.
+
+** Interesting
+
+ClojureScript got a new [[https://clojurescript.org/news/2020-04-24-release][1.10.741 release]].
+
+From ClojureScript team: [[https://clojurescript.org/news/2020-04-24-bundle-target][Embracing JavaScript Tools]].
+
+Jepsen, API change [[https://twitter.com/jepsen_io/status/1251896404521259008][coming up]], with a possibly the longest doc string
+in ns declaration, coming in at 366 lines long, [[https://github.com/jepsen-io/jepsen/blob/master/jepsen/src/jepsen/generator/pure.clj][link]].
+
+[[https://github.com/didibus/anakondo][anakondo]] - a Emacs minor mode "which emulates Cursive", by providing
+auto-complete of Clojure buffers even without a connected REPL.
+
+[[https://gist.github.com/roman01la/b939e4f2341fc2f931e34a941aba4e15][ClojureScript REPL workflow]]
+
+Clojure in Rust, [[https://github.com/Tko1/ClojureRS][repo]].
+
+[[https://github.com/chr15m/flk][Fleck]] - Clojure-like LISP that rans on Bash.
+
+Technomancy's [[https://technomancy.itch.io/tremendous-quest-iv][entry]] from this year's Lisp Game Jam (code is Fennel).
+
+** Write ups
+
+WebAuthn and Clojure, [[https://grison.me/2020/04/23/webauthn-with-clojure/][link]].
+
+Collaborate serverless-ly on ClojureScript: [[https://thegeez.net/2020/04/17/crepl_is_back.html][crepl is back]].
+
+Why not software hits: [[https://whynotsoftware.github.io/wnaf-months-to_/][months-to]], [[https://whynotsoftware.github.io/wnaf-xsd-decimal-fmt/][xsd-decimal-format]], [[https://whynotsoftware.github.io/wnaf-parse-num/][parse-num]] in
+ClojureScript, [[https://whynotsoftware.github.io/wnaf-decimal-fmt/][decimal-fmt]] in ClojureScript & [[https://whynotsoftware.github.io/wnaf-id/][UUID generation]] in
+Clojure.
+
+How to create JVM heap dump from the REPL, [[https://www.reddit.com/r/Clojure/comments/g68uvy/creating_a_jvm_heap_dump_from_the_repl/][link]].
+
+Cloudread Clojure, blog series on writing a Clojure web app: [[https://javahippie.net/clojure/cloud/2020/04/20/clojurenative01.html][part 1]] &
+[[https://javahippie.net/clojure/cloud/2020/04/21/clojurenative02.html][part 2]].
+
+[[http://www.cartesiantheatrics.com/2020/04/14/codenames-app.html][User-driven UI with Datascript]]
+
+Q&A: How to find the path of keys to a value in a nested array map in
+Clojure? [[https://stackoverflow.com/questions/61338077/how-to-find-the-path-of-keys-to-a-value-in-a-nested-array-map-in-clojure][link]].
+
+A Reddit thread about a front end dev tried ClojureScript and failed,
+[[https://www.reddit.com/r/Clojure/comments/g546n3/clojurescript_i_have_tried_and_i_have_failed/][link]].
+
+Raytraclj, a raytracer in Clojure, [[https://grison.me/2020/04/20/raytraclj-a-raytracer-in-clojure/][link]].
+
+ClojureScript Macros: A (Not So) Long Journey [Part I], [[https://hackernoon.com/clojurescript-macros-a-not-very-long-journey-part-i-ljf332ie][link]].
+
+[[https://www.reddit.com/r/Clojure/comments/g3q5wt/honeyeql_now_supports_pagination_sorting_filtering/][HoneyEQL now supports pagination, sorting & filtering]]
+
+[[https://kaygun.tumblr.com/post/615701332914061312/next-permutation-in-the-lexicographical-ordering][Next Permutation in the Lexicographical Ordering]]
+
+From Ramsey Nasser who's hacking on MAGIC: [[https://increment.com/programming-languages/crash-course-in-compilers/][Crash course in compilers]].
+
+7 JVM arguments of Highly Effective Applications, [[https://blog.gceasy.io/2020/03/18/7-jvm-arguments-of-highly-effective-applications/][link]].
+
+GraphQLize Update #2 - [[https://www.graphqlize.org/blog/graphqlize-update-2][Supports Sorting, Filtering & MySQL Boolean
+Types]].
+
+
+** Meetup
+
+Helsinki Clojure meetup, where they'll live code private blockchain in
+the REPL, [[https://www.meetup.com/Helsinki-Clojure-Meetup/events/270125466/][link]].
+
+** Video
+
+Listen to Vlad Protsenko talk about cljfx:
+https://www.youtube.com/watch?v=xcMNTKFmEgI
+
+Video from a meetup from last fall about Datahike - a durable datalog
+store, [[https://www.youtube.com/watch?v=j_fAJ5wRyes][link]].
+
+Video demonstrating data visualisation, [[https://twitter.com/metasoarous/status/1251612015518334977][link]].
+
+:clojureD 2020 conf, added the videos of the [[https://clojured.de/media/videos/videos-2020/][lightning talks]].
+
+** Podcasts
+
+Functional Design in Clojure [[https://clojuredesign.club/episode/073-silent-sockets/][Ep 073]]: Silent Sockets, this week the
+topic is: "Checking websocket health."
+
+** Learning
+
+[[https://www.reddit.com/r/Clojure/comments/g3i4lx/what_background_readinglearning_do_you_recommend/][What background reading/learning do you recommend for Clojure/Clojurescript]]
+
+Java Objects Inside Out, from Aleksey Shipilëv, Red Hat Open JDK dev, [[https://shipilev.net/jvm/objects-inside-out/][link]].
+
+Learn Datomic, part 2, [[https://drewverlee.github.io/posts-output/2020-4-18-learn-datomic-part-2.html][link]].
+
+Discussion on [[https://www.reddit.com/r/Clojure/comments/g3cmxf/what_is_the_best_way_currently_to_write/][the best way to write serverless apps in Clojure]].
+
+** New releases
+
+[[https://github.com/juxt/crux/releases/tag/20.04-1.8.2-alpha][crux 20.04-1.8.2-alpha]] - lots of new features packed in.
+
+babashka v0.0.88 adds clojure.data.xml, [[https://github.com/borkdude/babashka/releases/tag/v0.0.88][link]].
+
+babashka v0.0.89: adds support for next.jdbc + PostgresQL, [[https://twitter.com/borkdude/status/1253693704336027648][link]].
+
+spire v0.1.0-alpha.4 - it includes a new curl module for issuing
+http/https requests on the remote
+hosts, [[https://github.com/epiccastle/spire/releases/tag/v0.1.0-alpha.4][link]].
+
+[[https://github.com/pfeodrippe/arrudeia][arrudeia]] - small and simple library to control scheduling in Clojure for testing
+
+inf-clojure, an Emacs mode for various Clojure flavours, is undergoing
+a rewrite and a new version is avaliable on [[https://melpa.org/#/inf-clojure][MELPA]].
+
+[[https://github.com/dvlopt/void][void.cljc]] - This small library proposes macros and functions for
+interacting with nil under various circumstances
+
+[[https://github.com/ReilySiegel/EQLizr][EQLizr]] - Adds support for ClojureScript and data fetching from Google
+Sheets.
+
+[[https://github.com/ReilySiegel/clojure-sheets][clojure-sheets]] - A Clojure/Script library to access data from Google Sheets.
+
+[[https://github.com/hkupty/defteron.builder][defteron.builder]] - protobuf compilation for tools.deps.
+
+[[https://github.com/katox/neanderthal-stick][neanderthal-stick]] updated to Neanderthal 0.31.
+
+[[https://github.com/luposlip/json-schema][json-schema]] - Clojure library JSON Schema validation and generation.
