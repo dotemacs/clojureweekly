@@ -1,0 +1,96 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #7
+
+Hello and welcome to the seventh Clojure Weekly.
+
+Here is a round up of the past week's activity in the Clojure(Script)
+world. Hope you enjoy it :)
+
+** Interesting
+
+Cognitect has a message for us: [[https://blog.cognitect.com/blog/supporting-open-source-developers][put you money where your mouth is]].
+
+[[https://clojureverse.org/t/what-is-it-about/5848][What is it about?]] - a very enthusiastic look at Clojure(Script).
+
+Alan Dipert's talk from From EU Lisp Symposium: [[https://twitter.com/alandipert/status/1255582613101621248][JavaScript Assisted Common Lisp]].
+
+[[https://jepsen.io/analyses/dgraph-1.1.1][Jepsen analysys]] of Dgraph 1.1.1.
+
+[[https://blog.ambrosebs.com/2020/04/26/spec2-experience.html][Spec 2 experience report]]
+
+[[https://essays.bardiapourvakil.com/posts-output/2020-04-21-finite-fields/][Summary and exploration of Jimmy Song's Programming Bitcoin in Clojure]]
+
+** Write up
+
+Community water coolers, where to find them and what are they, [[https://www.reddit.com/r/Clojure/comments/g7kwyq/clojure_clojurescript_community_water_coolers/][link]].
+
+ClojureScript's targeting is now [[https://twitter.com/kommen/status/1253740825407893509][much more flexible]].
+
+[[https://medium.com/magnetcoop/helping-small-businesses-one-gift-card-at-a-time-with-clojure-and-hydrogen-dcbf0ce06ec][Helping small businesses one gift-card at a time, with Clojure and Hydrogen]]
+
+Building a URL shortener with Redis & Clojure, [[https://alejandro.run/building-a-url-shortener-with-redis-and-clojure.html][link]].
+
+[[http://www.devstopfix.com/posts/2020/clojerl-ant-simulation/][Clojerl Ant Simulation]]
+
+Experience report on using Clara rules, [[http://narkisr.com/posts/27-04-2020-clara-flow/][link]].
+
+[[https://jacobobryant.substack.com/p/yet-another-component-alternative][Yet another Component alternative]] - a look at the libraries in the vein of Component, Integrant & Mount
+
+[[https://mail.openjdk.java.net/pipermail/discuss/2020-April/005429.html][Startup time in the JDK]] - OpenJDK mail list discussion about JDK
+startup time. Specifically about a new project, Leyden.
+
+[[https://mrhaki.blogspot.com/2020/04/clojure-goodness-partition-collection.html][Partition Collection Into Sequences]] - a look at partition, partition-all and partition-by.
+
+Discussion over on Reddit about about the production use of [[https://www.reddit.com/r/Clojure/comments/gakjmy/have_you_used_both_ring_and_pedestal_for/][ring & pedestal]]
+
+** Podcasts
+
+The REPL - [[https://www.therepl.net/episodes/36/][Clojure CLI tools with Michiel Borkent]]
+
+ClojureScript Podcast - [[https://soundcloud.com/user-959992602/s4-e2-reagent-with-juho-teperi][S4 E2 Reagent with Juho Teperi]]
+
+** Video
+
+[[https://www.youtube.com/watch?v=StXLmWvb5Xs][Crux showcase #12]] - summary of the latest development of their bitemporal database Crux.
+
+[[https://meyvn.org/video/routing][Routing from scrach]] - Daniel Szmulewicz lookins at how routing in Ring applications works.
+
+** Releases
+
+rum 0.11.5 - https://gist.github.com/roman01la/b1888bedbafd328169e26c66dde5fd56
+
+[[https://github.com/glosa/glosa-server][glosa-server]] - a Disqus clone
+
+[[https://github.com/athomasoriginal/create-reagent-app][create-reagent-app]] template - Updated figwheel, reagent and clj-new to
+latest in create-reagent-app cli template.
+
+[[https://github.com/epiccastle/spire/releases/tag/v0.1.0-alpha.6][spire]] 0.1.0-alpha.6 - operations provisioning tool in Clojure has had a few fixes.
+
+[[https://github.com/dvlopt/fdat.cljc][fdat]] - A new Clojure(Script) library for automatically serializing
+functions and impossible things like infinite sequences
+
+[[https://github.com/vouch-opensource/krell#assets--arbitrary-node-library-requires][krell]] - Krell supports arbitrary js/require of assets and Node.js dependencies.
+
+[[https://twitter.com/uochan/status/1253826555609878529][Github Action to run clojure.test in babashka]]
+
+[[https://github.com/oliyh/martian][martian]] 0.1.12 - the http abstraction library. This release adds
+support for: path parameters route definition spec, clj-http-lite
+module. Improves on: handling of additional properties, handling of
+open maps, remove implicit martian-httpkit dependency from
+martian-test.
+
+[[https://github.com/didibus/anakondo][anakondo]] v0.2 - an Emacs minor mode for Clojure[Script] completion
+without needing a connected REPL: now in MELPA, with Locals completion
+and Java completion.
+
+com.wsscode/async 1.0.5 - core.async helpers library. Adds a helper to
+handle async try/catch on streaming processes, see:
+https://github.com/wilkerlucio/wsscode-async#error-catching-on-streaming-processes
+
+[[https://cljdoc.org/d/lambdaisland/uri/1.3.45/doc/readme][lambdaisland/uri]] 1.3.45 - A pure Clojure(Script) URI library. Adds
+functions to deal with query strings, query-map, assoc-query, and a
+bugfix for how query strings are normalized
+
+[[https://github.com/graphqlize/honeyeql/blob/master/changelog/2020-05-01.md][HoneyEQL]] 0.1.0-alpha16 - A library that enables you to query database
+using the EDN Query Language. Adds support for Logical Operators &
+Relationship Attributes in filters.
