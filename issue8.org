@@ -1,0 +1,131 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #8
+
+Hello and welcome to the eight edition of Clojure Weekly.
+
+If I didn't feature something that you feel the community should know
+about, please let me know and I'll add it in the next newsletter.
+
+Until then, I hope you enjoy reading what I collected this week.
+
+** Interesting
+
+Fogus shares his [[http://blog.fogus.me/2020/05/01/walking-the-clojure-source-history-a-talk-not-given/][notes on a talk, about Clojure source history,]] that
+was never presented.
+
+[[https://findka.com/blog/migrating-to-biff/][Migrating to Biff, a self-hosted Firebase alternative for Clojure]] - a
+solution powered by Crux, where the author goes into details on how it
+all works.
+
+*clj-kondo realease notes* - The fact that this is a new release of
+clj-kondo is news worthy, but more importanly, look at the way the
+release notes were done:
+- credits given to all the contributors, which is nice
+- screenshots showing off the new features/fixes.
+I so wish that more library authors did this.
+https://github.com/borkdude/clj-kondo/releases/tag/v2020.05.02
+
+[[http://www.appliedscience.studio/articles/array-programming-for-clojurists.html][Array languages for Clojurians]] - Alan Perils, language archaeology & Clojure.
+
+Common Lisp REPL with editor, mobile app in [[https://apps.apple.com/us/app/cl-repl/id1511296102?ls=1][App Store]] & [[https://play.google.com/store/apps/details?id=org.eql5.android.repl][Play Store]].
+
+Calva - REPL powered environment for Visual Studio Code had a release
+last week, which I forgot to mention, that added a new feature that
+instruments functions for debugging. Check the documentation [[https://calva.io/debugger/][here]].
+
+re-frame May 2020 sprint, [[https://github.com/day8/re-frame/issues/589][link]].
+
+[[https://quanttype.net/posts/2020-05-03-schema-spec-and-malli.html][Schema, Spec, and Malli]] - a look at a number of data specification
+libraries for Clojure.
+
+** Write ups
+
+How to write Leiningen test selectors that go beyond simple use-cases, [[https://medium.com/helpshift-engineering/the-convoluted-magic-of-leiningen-test-selectors-2eb6c452dfcf][link]].
+
+[[https://clojure-conundrums.co.uk/posts/saying-thank-you-to-the-nhs/][A static site generation in Clojure]]
+
+In this blog post Daniel Janus considers [[http://blog.danieljanus.pl/2020/05/02/clojure-dependency/]["Is it possible for a Clojure
+project to declare no dependency on Clojure at all?"]]
+
+An example on how to [[https://matthewdowney.github.io/aleph-websocket-client-not-jetty.html][use Aleph as a Clojure WebSocket client]].
+
+[[https://www.reddit.com/r/Clojure/comments/gd91nf/what_convinced_you_to_learn_clojure/][What convinced you to learn Clojure]] - Reddit discussion, as well as
+this [[https://twitter.com/plexus/status/1257264020651999232][Twitter thread]].
+
+[[https://javahippie.net/clojure/cloud/2020/05/04/clojurenative03.html][Cloudready Clojure Part 3]] - Clojure web application description.
+
+[[https://lambdaisland.com/blog/2020-05-04-open-source-update-april-2020][Lambda Island Open Source update]]
+
+[[https://increasinglyfunctional.com/2020/05/07/clojurescript-react-native-krell-emacs.html][Krell REPl in Emacs]] - how to get the Krell REPL going in CIDER.
+
+PurelyFunctional.tv with [[https://purelyfunctional.tv/issues/purelyfunctional-tv-newsletter-376-learn-from-core/]["Learn from core"]], where the message is that
+you can pick up a lot from reading the code from the core.
+
+[[https://j19sch.github.io/blog/clj1-deciding-on-an-editor/][Deciding on a Clojure editor]] - various ediors for Clojure considered.
+Followed by part 2: [[https://j19sch.github.io/blog/clj2-setting-up-vim/][Setting up Vim]].
+
+[[https://humorless.github.io/posts-output/tutoring-class][Teaching Clojure programming class]] - lessons learned from teaching Clojure to a class.
+
+[[https://kaygun.tumblr.com/post/617394172713943040/processing-ecb-data-with-common-lisp][Processing European Central Bank's data with Common Lisp]], with some
+nice macros, that give it a Clojure flavour.
+
+[[https://www.graphqlize.org/blog/graphqlize-update-3/][GraphQLize Update (#3)]] - Logical Operators & Filter by nested objects.
+
+** Podcast
+
+Defnpodcast #59 - [[https://soundcloud.com/defn-771544745/59-jr0cket-in-spacemacs-aka-practicalli-aka-john-stevenson][with John ‘practicalli’ Stevenson]]
+
+** Releases
+
+Kaocha 1.0.629 is out, with two new plugins, :orchestra and :preloads,
+as well as a bugfix. Kaocha is a feature complete, user friendly and
+extensible test runner. https://cljdoc.org/d/lambdaisland/kaocha/1.0.629/doc/readme
+
+Chlorine - Socket REPL and nREPL plug-in for the Atom editor. In which
+it's now possible to render arbitrary "reagent" elements. This can
+open lots of possibilities for interactions on the editor that depends
+on code from the REPL, huge customizations, data science, and the
+possiblity to customize the renderer as far as one can think of. The
+documentation have better examples on what's possible is [[https://github.com/mauricioszabo/atom-chlorine/blob/master/docs/extending.md#interactive-results][here]].
+
+[[https://github.com/dvlopt/rktree.cljc][rktree]] - A funky kind of tree, nested maps where leaves actually have
+two paths, one specifying time and the other one specifying space.
+
+[[https://github.com/DarinDouglass/clj-psql][clj-psql]] - a small Clojure wrapper for for shelling out to `psql`,
+compatible with babashka.
+
+[[https://github.com/tomekw/hikari-cp/blob/master/CHANGELOG.md#2120][hikari-cp]] 2.12.0 - got an update, its dependency HikaryCP got updated.
+
+[[https://github.com/Olical/conjure/releases/tag/v3.0.0][conjure]] v3.0.0 - long and detailed release entry. It uses Fennel,
+which can only be a plus.
+
+[[https://github.com/netdava/ofbiz-clojure-repl][ofbiz-clojure-repl]] - Apache OFBiz ERP and Clojure REPL, along with [[https://www.youtube.com/watch?v=XXxJDZRzu_E][a
+video demo]].
+
+[[https://melpa.org/#/vega-view][vega-view]] - an Emacs Lisp library for visualizing Vega specifications,
+is now on MELPA.
+
+[[https://github.com/zelark/nano-id][nano-id]] - a tiny, secure, URL-friendly unique string ID generator for Clojure and ClojureScript.
+
+[[https://github.com/dvlopt/dsim.cljc][dsim.cljc]] - an engine for doing discrete-event simulation.
+
+[[https://github.com/cljfx/cljfx][cljfx]] 1.7.0 - a declarative, functional and extensible wrapper of
+JavaFX inspired by better parts of react and re-frame.
+
+[[https://github.com/metosin/spec-tools/blob/master/CHANGELOG.md#0102-2020-05-05][metosin/spec-tools]] 0.10.2 - is out with large number of small bug
+fixes.
+
+[[https://github.com/pfeodrippe/ummoi][ummoi]] - Run TLA+ operators anywhere (made in Clojure and GraalVM compiled).
+
+[[https://github.com/liquidz/antq][antq]] 0.2.0 - tool to point out your outdated dependencies.
+
+[[https://gitlab.com/demonshreder/column/-/tags/][column]] - leiningen template for pedestal based web applications.
+
+babashka pods - are an exciting new way to extend babashka dynamically
+with features provided by other programs. They are introduced in
+babashka v0.0.92. Babashka pod documentation: [[https://github.com/borkdude/babashka/blob/master/doc/pods.md][link]]
+
+[[https://github.com/just-sultanov/clj-monaco][clj-monaco]] - a ClojureScript library for the Monaco Editor.
+
+[[https://github.com/exoscale/ex][ex]] 0.3.7 - exception handling library for clojure & manifold, adds
+datafy support.
