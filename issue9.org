@@ -1,0 +1,200 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #9
+
+Welcome to the ninth Clojure Weekly.
+
+This week the issue goes out on Sunday as there are always interesting
+developments during the weekend, which I've added to this issue.
+
+As always, if there's something that didn't make it in this issue,
+please let me know.
+
+I hope you enjoy it, thanks.
+
+
+** Interesting
+
+[[https://vvvvalvalval.github.io/posts/2020-05-15_Using-Decision-Trees-for-charting-ill-behaved-datasets.html][Using Decision Trees for charting ill-behaved datasets]] - a very
+detailed look at using of Decision Trees for data analysis. Take some
+time to read through this.
+
+A look at [[http://langnostic.inaimathi.ca/posts/more-on-clj][implementing of some Clojure features in Common Lisp]].
+
+Stuart Halloway [[https://twitter.com/stuarthalloway/status/1260910649812480004][on Clojure developers]].
+
+Paulus Esterhazy on [[https://twitter.com/pesterhazy/status/1259466914969067525][Clojure LSP]].
+
+A new graphical development environment for Clojure, [[https://twitter.com/anton_volkoff/status/1257610726438572033][link]].
+
+re-frame's [[https://day8.github.io/re-frame/][new website]].
+
+With [[https://github.com/Rapsssito/react-native-tcp-socket/pull/47/files][this change]] by Joshua Miller, Microsoft's [[https://github.com/microsoft/react-native-macos][react-native-macos]] for
+macOS, fully works with Krell.
+
+Look at the [[https://cr.openjdk.java.net/~rpressler/loom/loom/sol1_part1.html][Project Loom]] which brings Fibers & Continuations to JVM.
+
+Would you be interested in [[https://twitter.com/plexus/status/1261921090722574336]["Clojure Testing Masterclass"]]?
+
+An initiative to pair Clojure Learners and Mentors together, [[https://github.com/athensresearch/athens/pull/68][link]].
+
+MAGIC, a standalone Clojure implementation for the CLR, [[https://twitter.com/ra/status/1261435359117762560][just compiled
+itself]]. And a [[https://twitter.com/ra/status/1260978371711942660][Twitter thread]] by the author about the project.
+
+Write your Makefiles in babashka, [[https://twitter.com/borkdude/status/1261358361523691520][like this]].
+
+Jepsen, aka aphyr, [[https://twitter.com/jepsen_io/status/1261275766257410055][looks at MongoDB 4.2.6's transaction system]].
+
+** Videos
+
+Clojure Finland meetup videos
+• Markus Hjort: [[https://youtu.be/q2znWddSD4c][Live coding: Building Private Blockchain in REPL]].
+• Jaakko Hannikainen: [[https://youtu.be/B9l_J3s216s][Clojure, lenses and traversals]].
+
+Fulcro demo, from the author
+"At the request of a user I explored the possible use of Fulcro as the
+full-stack part of a Reframe app. Turns out it really was pretty
+simple. Not sure if I’m missing something (I’m no reframe expert), but
+I made a video of how one would go about it from a Fulcro perspective.
+Gives you all of the full-stack graph abilities of Fulcro (and much of
+the other support, like UI state machines, form state management,
+etc.) while still being able to use Reframe’s full feature set."
+https://www.youtube.com/watch?v=ng-wxe0PBEg And the code is [[https://github.com/awkay/fulcro-with-reframe][here]].
+
+[[https://www.youtube.com/watch?v=3Q4GUiUIrzg][The Dutch Clojure Meetup #125]] recording of talks on Kafka topology-grapher & Babashka pods.
+
+** Podcasts
+
+ClojureScript Podcast S4 E3 - [[https://soundcloud.com/user-959992602/s4-e3-re-frame-with-mike-thompson][re-frame with Mike Thompson]]
+
+defnpodcast #60 - [[https://soundcloud.com/defn-771544745/60-4th-anniversary-episode-return-of-david-nolen-aka-swannodette][4th Anniversary Episode - Return of David Nolen (aka @swannodette)]]
+
+The Twenty Minute VC - [[https://thetwentyminutevc.com/conorwhitesullivan/][With Roam Research founder Conor White-Sullivan]]
+
+Stuart Sierra [[https://www.nomanifestos.com/episodes/12][interviews Jen Meyers]], for his podcast No Manifestos.
+
+Functional Design in Clojure - [[https://clojuredesign.club/episode/074-deploy-they-said-itll-be-fun-they-said/][Ep 074: Deploy, they said. It'll be fun, they said]].
+
+** Meetups
+
+[[https://www.reddit.com/r/lisp/comments/ga7kfk/online_lisp_meeting_series/][Online Lisp meetups]], the last one took place on 12th May. Do you want
+to see more?
+
+[[https://www.meetup.com/Chennai-Clojure-User-Group/events/270510568/][Chennai Clojure meetup]] - Saturday, May 23, 2020 4:00 PM to 6:30 PM GMT+5:30.
+
+[[https://www.meetup.com/London-Clojurians/events/lbjnmrybchbfc/][Clojure Weekly Study Group]] by London Clojurians - Saturday, May 23,
+2020 11:00 AM to 12:00 PM GMT+1.
+
+** Write ups
+
+[[https://juxt.pro/blog/posts/crux-doc-store.html][Crux]] - document store adds support for S3.
+
+[[http://blog.danieljanus.pl/2020/05/08/making-of-clojure-dependency/][Making of Clojure dependency]] - explanation of what when into the write
+up of his previous blog post where he ponders if a Clojure project can
+omit declaring a dependency on a Clojure version.
+
+Thomas Heller, shadow-cljs author [[https://code.thheller.com/blog/shadow-cljs/2020/05/08/how-about-webpack-now.html][on why shadow-cljs doesn't use
+webpack]] despite the new features in ClojureScript.
+
+[[https://www.reddit.com/r/Clojure/comments/gfbbw4/clojurescript_for_contracts_showcase_of_its_power/][Clojure for lawyers]] - a developer, who is a lawyer, of a SAAS solution
+in Clojure, for generating contracts, discusses the advantage of using
+Clojure for his product. A Reddit thread.
+
+[[https://www.eigenbahn.com/2020/05/06/fast-clojure-deps-auto-reload][Fast Clojure deps at the REPL]] - how to load dependencies at the REPL
+in Emacs & CIDER.
+
+[[https://www.reddit.com/r/Clojure/comments/ggxenn/new_clojurian_trying_to_find_best_editor/][A new Clojurian looking for $EDITOR]] - these discussions come up from
+time to time, which is useful as Clojurians are a diverse crowd.
+
+[[https://quanttype.net/posts/2020-05-10-essential-features.html][Essential features of data specification libraries]] - a look at data
+validation libraries: Schema, Spec & Malli.
+
+[[https://mrhaki.blogspot.com/2020/05/clojure-goodness-set-default-value-for.html][Set Default Value For nil Function Argument With fnil]] - a look at fnil
+function and [[https://mrhaki.blogspot.com/2020/05/clojure-goodness-using-range-function.html][Using The range Function]].
+
+[[https://clojureverse.org/t/are-we-the-programming-equivalent-of-fake-martial-arts/5912][Clojure & fake martial arts]] - comparison of Clojure to fake martial
+arts, a discussion on Clojureverse.
+
+[[https://functional.works-hub.com/learn/using-open-source-issues-to-learn-a-new-programming-language-575fe][Using open-source issues to learn a new programming language]] - a look
+at how to learn by going through a project's issues/pull requests.
+
+[[https://matthewdowney.github.io/encrypting-keys-in-clojure-applications.html][Encrypting Keys in Clojure Applications]] - on using funcool/buddy-core
+library for encryption & decryption.
+
+Munging of European Central Bank data with Clojure, [[https://kaygun.tumblr.com/post/617929907852410880/ecb-data-with-clojure-and-vega-lite][link]].
+
+A Japanese blog about babashka and AWS by [[https://twitter.com/uochan][@uochan]]:
+https://tech.toyokumo.co.jp/entry/aws_logs_babashka
+
+[[https://j19sch.github.io/blog/clj3-and-or-being-weird/][Clojure's 'and' and 'or' are weird (but not really)]] - this is third in
+the series of blog post where the author looks at Clojure and editors
+for it.
+
+A look at [[http://slipset.github.io/posts/the-problem-i-dont-have][JSON serialisation]] in Clojure.
+
+** Releases
+
+[[https://github.com/metosin/reitit/blob/master/CHANGELOG.md#050-2020-05-17][reitit]] 0.5.0 - is out. A fast data-driven router for
+Clojure/Script. This update comes after four months of work. There are
+breaking changes in sieppari, which is dropping support for core.async
+and manifold.
+
+New maintenance release of confetti/s3-deploy , a small library to
+efficiently sync files to an S3 bucket. Great for small deploy scripts
+using clj too: https://github.com/confetti-clj/s3-deploy#cli-tools
+
+[[https://github.com/candid82/joker/releases/tag/v0.15.4][joker]] v0.15.4 - small Clojure interpreter & linter.
+
+Fulcro 3.2.5 - This version includes a number of minor improvements to
+the internals, and a few bug fixes. It also makes a minor modification
+to the behavior of the new synchronous transactions: Using them will
+no longer schedule a full UI refresh. This was judged to be an error
+in the original implementation.  You can use app/schedule-render! if a
+localized sync change needs a wider refresh, but the sync optimization
+itself works best if acts more like a strictly component local change.
+https://github.com/fulcrologic/fulcro
+
+[[https://github.com/green-coder/minimallist][minimallist]] - data driven data model library, inspired by Spec &
+Malli. From the author, Vincent Cantin, description: no macro, no
+static registry, pure functions.  Fully data driven, models are
+hash-map based, support recursive definitions, sequence regex,
+relatively simple implementation, very short to read (about 100 lines
+of code) helpers functions to create the hash-map models painlessly,
+cross platform (.cljc) Non features: does not integrate with anything
+else, does not try hard to be performant, no roadmap or timeline: I
+made this library mainly for my own usage, and I take my
+time. Feedback welcome.
+
+[[https://github.com/Olical/conjure/releases/tag/v3.1.0][conjure]] 3.1.0 - interactive evaluation for NeoVim (for Clojure &
+Fennel) has an assorment of updates and a dog picture.
+
+[[https://github.com/fmnoise/flow][flow]] 4.0 - is released with new artifact id and lots of new
+functionality:
+- new protocol-based implementation for defining failure and non-failure processing and throwing
+- chain function for applying multiple functions for non-failure results in chain
+- handle - function for applying success or error handler depending on value
+- ex-info! functional wrapper for creating and throwing ex-info
+- autocarrying for then, else, thru and their call-based versions
+- cljs support (experimental)
+
+*org.clojure/core.async* 1.2.598 is now available:
+• onto-chan, to-chan use of go-loop incompatible with blocking colls,replace with onto-chan! onto-chan!! to-chan! to-chan!! (deprecate onto-chan, to-chan)
+• to-chan! and onto-chan! added to cljs for portability
+
+*lein-figwheel* 0.5.20 - has been released and supports the new :bundle
+target which is pretty cool stuff you should be able to glean enough
+info from the https://clojurescript.org/guides/webpack guide
+
+[[https://github.com/joshuamiller/rn-cljs-apple-authentication][rn-cljs-apple-authentication]] - OAuth2 sign in with Apple, implemented for React Native in ClojureScript.
+
+[[https://github.com/nrepl/piggieback/blob/master/CHANGES.md#050-2020-05-11][piggieback]] 0.5 - adds nREPL [[https://github.com/nrepl/piggieback#pretty-printing][pretty-printing]] mechanism introduced in
+nREPL 0.6. Drops support for nREPL 0.4 & 0.5.
+
+[[https://github.com/lispyclouds/pod-lispyclouds-docker][pod-lispyclouds-docker]] - A babashka pod for interacting with docker
+
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.95][babashka]] v0.0.95 - is there a week when there isn't something
+happening in babashka world? Check out the release notes.
+
+[[https://github.com/jepsen-io/jepsen/releases/tag/0.1.19][jepsen]] 0.1.19 - a framework for distributed systems verification, with
+fault injection.
+
+[[https://github.com/tolitius/tag/][tag]] - a new library for tagging be it git, maven or something else.
