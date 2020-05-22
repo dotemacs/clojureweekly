@@ -1,0 +1,136 @@
+#+OPTIONS: toc:nil num:nil
+* Clojure Weekly #10
+
+Welcome to the tenth Cloljure Weekly!
+
+Hold your breath while I self high five and self pat on the back.
+
+There, now you can enjoy the rest of the newsletter.
+
+** Interesting
+
+That Clojure has the ability to positively affect your code is no
+secret, but it's nice when you see the approches from Clojure (in this
+case, from re-frame specifically), [[https://news.ycombinator.com/item?id=23183558][leak to other projects]], like the
+latest React state management library, Recoil.
+
+A bit of a drama ensued when cljs-devtools [[https://github.com/binaryage/cljs-devtools/releases/tag/v1.0.1][announced that Chrome
+browser might be phasing out custom formatters]]. With the discussion on
+[[https://www.reddit.com/r/Clojure/comments/gnngzb/the_devtools_apocalypse/][reddit]] and this [[https://twitter.com/ChromeDevTools/status/1263421789671239681][thread on Twitter]].
+
+Two announcements from Clojurists Together:
+
+- [[https://www.clojuriststogether.org/news/announcing-summer-of-bugs/][Summer of bugs]] - a way to take sponsorship from Clojurists Together,
+  to work in a short pertiod, to fix some smaller bugs.
+
+- [[https://www.clojuriststogether.org/news/announcing-the-clojurists-together-foundation/][The formation of the foundation]] - as a foundation it'll have more
+  flexibility about the way the sponsorship is done. But don't take my
+  word for it, please read their announcement. With a [[https://lobste.rs/s/odhduy/announcing_clojurists_together][discussion]] on
+  lobste.rs.
+
+Clojure implementation for the CLR, [[https://github.com/nasser/magic][MAGIC]], compiled [[https://twitter.com/ra/status/1263583951303569408][100% of core.clj]].
+
+But MAGIC is not to be confused with the ClojureCLR, which is close to
+1.10 release, [[https://groups.google.com/forum/m/#!topic/clojure-clr/2v9xls5hreE][link]].
+
+Thomas Heller shows us how to use WebAssembly code in a CLJS, [[https://github.com/thheller/wasm-pack-cljs][repo]].
+
+Clojars now allows [[https://groups.google.com/forum/#!msg/clojure/GmAU4XwnRpw/oetRCb0UCgAJ][deploy tokens support]].
+
+ClojuTre 2020 has been [[https://clojutre.org/2020/][postponed]].
+
+*defold game engine* - Cognitect helped them with the
+project. Announcement [[https://defold.com/2020/05/19/Defold-is-now-open-source/][here]], talk by Michael Nygard & Ragnar Svensson
+[[https://www.youtube.com/watch?v=ajX09xQ_UEg][here]], [[https://www.reddit.com/r/Clojure/comments/gmkzad/king_is_making_its_defold_game_engine_open_source/][reddit]] & [[https://lobste.rs/s/ykf10v/king_releases_defold_game_engine_under][lobste.rs]] discussions.
+
+** Write ups
+
+The author explains how to built Raft algorithm in Clojure, [[https://phillippe.siclait.com/blog/raft-in-clojure][link]].
+
+[[https://nl.movim.eu/?blog/phoe%2540movim.eu/cd3577f6-fb1d-45f5-b881-7b9a68ee822e][On reading Lisp code]] - on parentheses & indentation, somewhat Emacs
+specific as the modes mentioned are for Emacs.
+
+[[https://emacsninja.com/posts/state-of-emacs-lisp-on-guile.html][State of Emacs Lisp on Guile]] - since Emacs is a tool that many
+Clojure(Script) developers use... a introductory look at Guile.
+
+[[https://hi.technomancy.us/objects/227ef8ff-5890-4761-b29c-18beb660517e][On debugging Fennel's web based REPL]] by technomancy.
+
+[[http://www.lisperati.com/#!A_Productivity_System_For_Creators]["A Productivity System For Creators"]] - a blog post from
+lisperati. Nothing Clojure/Lisp specific in there, a post on how to
+boost productivity.
+
+Setting up a Reagent Clojurescript project with Shadow-Cljs and Cursive, [[https://ghufran.posthaven.com/setting-up-a-reagent-clojurescript-project-with-shadow-cljs-and-cursive][link]].
+
+How to bootstrap a Clojure Web API, [[https://medium.com/@_jba/setting-up-a-clojure-web-api-6bda099e76e8%20][link]].
+
+[[https://medium.com/@thedanpetrov/creating-a-spacex-crew-dragon-simulator-autopilot-in-clojure-1ac095d9209b][Creating a SpaceX Crew Dragon simulator autopilot in Clojure]] - the
+author looks at how automatic docking systems work in real life.
+
+How to implementing static properties in ClojureScript, [[https://stackoverflow.com/questions/61891349/implementing-static-properties-in-clojurescript][link]].
+
+[[https://www.graphqlize.org/blog/graphqlize-update-4/][GraphQLize Update (#4)]] - Aggregate Functions & Group By.
+
+Demo of comp function, [[https://mrhaki.blogspot.com/2020/05/in-clojure-we-can-use-comp-function-to.html][link]].
+
+A gist on [[https://gist.github.com/Saikyun/7573a9fcaa2499942e48b4ea6cfc116a][babashka command to watch a folder for changes to .zig-files]].
+
+How to run embedded JavaScript within a Clojure app, [[https://www.reddit.com/r/Clojure/comments/gnoamb/how_to_run_small_bits_of_js_code_in_a_clojure_app/][reddit discussion]].
+
+** Videos
+
+May Clojure LA meetup recording, [[https://www.youtube.com/watch?v=Zg4i1MDDE5w][link]].
+
+The individual European Lisp Symposium talks are now available [[https://www.youtube.com/watch?v=lqVN1fGNpZw&list=PLA66mD-6yK8yjlJCI0Ay2f2IvvmB9Ktga][here]].
+
+** Podcasts
+
+[[https://blog.cognitect.com/cognicast/151][cognicast #151]] - with Sarma Velamuri.
+
+[[https://www.therepl.net/episodes/37/][The REPL #37]] - The Clojurists Together Foundation with lvh.
+
+[[https://www.functionalgeekery.com/functional-geekery-episode-131-martin-j-logan/][Functional Geekery Episode 131]] – Martin J. Logan.
+
+** Meetups
+
+Next Helsinki Online Clojure meetup on 4th of June at 17:00 UTC+3, [[https://twitter.com/ykarikos/status/1263744415505485824][link]].
+
+** Releases
+
+[[https://groups.google.com/forum/#!topic/cursive/gdKdT_uufU8/discussion][Cursive]] 1.9.2-eap4 - fixing a memory leak from eap3.
+
+[[https://github.com/genmeblog/rmarkdown-clojure][rmarkdown-clojure]] - Render HTML/PDF with knitr/rmarkdown with Clojure
+snippets.
+
+*Chlorine* - socket REPL (and nREPL) package for the Atom editor. In
+this release, a simple fix for Lumo/Plank, but also a huge improvement
+on the way you can customize Chlorine. You can now add custom commands
+with ClojureScript, only. See this tweet for an example:
+https://twitter.com/mauricio_szabo/status/1262177280610222081.
+
+[[https://github.com/acgollapalli/dataworks][dataworks]] - A distributed-by-default stored-function engine with REST
+API and stream processing capabilities built on top of Crux.
+
+[[https://github.com/toyokumo/tarayo][tarayo]] 0.2.0 - SMTP client library for Clojure.
+
+[[https://github.com/namenu/data.deque][data.deque]] - persistent Deque for Clojure(Script).
+
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.96][babashka]] v0.0.96 - the pod protocol now allows pods to define macros!
+
+[[https://github.com/borkdude/babashka/releases/tag/v0.0.97][babashka]] v0.0.97 - notable change: asynchronous pod functions may now
+take callbacks instead of being coupled to core.async.
+
+[[https://github.com/emil0r/ez-database][ez-database]] 0.8.1 - adds simple CRUD model possibilities for the lazy.
+
+[[https://github.com/epiccastle/spire/releases/tag/v0.1.0-alpha.10][spire]] v0.1.0-alpha.10 - Clojure's answer to Ansible, adds support for
+nREPL & documentation on how to use it from CIDER.
+
+[[https://github.com/fulcrologic/fulcro][fulcro]] 3.2.8 - this version fixes an accidental regression on
+component indexing.
+
+[[https://github.com/exoscale/coax][coax]] - Clojure.spec coercion library for clj(s).
+
+[[https://github.com/oliyh/carmine-streams][carmine-streams]] - utility functions for working with Redis streams in
+carmine. Allows you to create streams and consumer groups, consume
+streams reliably, deal with failed consumers and unprocessable
+messages and gain visibility on the state of it all with a few simple
+functions.
